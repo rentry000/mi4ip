@@ -45,12 +45,12 @@ jobs:
       shell: bash
       run: mihomo-linux-arm64-v1.19.12/mihomo-linux-arm64-v1.19.12 convert-ruleset ipcidr yaml adblock_reject25.yaml adblock_reject25.mrs
 
-    - name: Force Add and Commit adblock_rule_generator_json25.srs  # 强制添加并提交文件
+    - name: Force Add and Commit adblock_rule_generator_json25.mrs  # 强制添加并提交文件
       run: |
         git config --global user.name 'github-actions'  # 配置 Git 用户名
         git config --global user.email 'github-actions@github.com'  # 配置 Git 邮箱
-        git add -f adblock_reject25.srs  # 强制添加文件
-        git commit -m 'Update adblock_reject25.srs' || true  # 提交变更（允许空提交）
+        git add -f adblock_reject25.mrs  # 强制添加文件
+        git commit -m 'Update adblock_reject25.mrs' || true  # 提交变更（允许空提交）
 
     - name: Retry Push SRS file  # 重试推送文件
       env:
