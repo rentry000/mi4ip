@@ -43,7 +43,7 @@ jobs:
 
     - name: Convert rule-set  # 转换规则集
       shell: bash
-      run: mihomo-linux-arm64-v1.19.12.gz/mihomo convert-ruleset ipcidr yaml adblock_reject25.yaml adblock_reject25.mrs
+      run: mihomo-linux-arm64-v1.19.12.gz/mihomo-linux-arm64-v1.19.12 convert-ruleset ipcidr yaml adblock_reject25.yaml adblock_reject25.mrs
 
     - name: Force Add and Commit adblock_rule_generator_json25.srs  # 强制添加并提交文件
       run: |
