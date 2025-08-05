@@ -1160,7 +1160,7 @@ def create_mihomo_ruleset(cidrs: list[str], output_file: str):
     
     # 添加所有CIDR规则
     for cidr in cidrs:
-        yaml_content += f"  - IP-CIDR,{cidr}\n"
+        yaml_content += f"  - {cidr}\n"
     
     # 写入文件
     with open(output_file, 'w', encoding='utf-8') as f:
