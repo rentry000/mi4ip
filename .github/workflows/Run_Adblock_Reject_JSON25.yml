@@ -31,8 +31,8 @@ jobs:
         sudo apt-get update  # 更新软件包列表
         sudo apt-get install -y wget apt-transport-https software-properties-common  # 安装必要工具
         wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.12/mihomo-linux-amd64-v3-v1.19.12.gz
-        gzip -d  mihomo-linux-arm64-v1.19.12.gz
-        mv mihomo-linux-arm64-v1.19.12 mihomo
+        gzip -d  v1.19.12/mihomo-linux-amd64-v3-v1.19.12.gz
+        mv v1.19.12/mihomo-linux-amd64-v3-v1.19.12 mihomo
         chmod u+x mihomo
         sudo apt install -y bash
         sudo apt install -y python3-pip  # 显式安装 Python3-pip
